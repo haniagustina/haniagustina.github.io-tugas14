@@ -1,0 +1,90 @@
+<html>
+<title>Tugas 14</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body bgcolor="khaki">
+
+<div>
+<img src="banner.jpg" width="100%" height="30%">
+</div>
+
+<div class="w3-bar w3-brown">
+ <button class="w3-bar-item w3-button" onclick="openMakanan('home')">Home</button>
+ <button class="w3-bar-item w3-button" onclick="openMakanan('profile')">Profile</button>
+ <button class="w3-bar-item w3-button" onclick="openMakanan('Karedok')">Karedok</button>
+ <button class="w3-bar-item w3-button" onclick="openMakanan('Tutug Oncom')">Tutug Oncom</button>
+ <button class="w3-bar-item w3-button" onclick="openMakanan('Combro')">Combro</button>
+ <button class="w3-bar-item w3-button" onclick="openMakanan('Kue Balok')">Kue Balok</button>
+ <button class="w3-bar-item w3-button" onclick="openMakanan('Baso Aci')">Baso Aci</button>
+</div>
+
+<div id="home" class="w3-container makanan w3-animate-zoom">
+<center>
+<br><br>
+<h2>Wilujeung Sumping</h2>
+<h5>Di Website Makanan Khas Jawa Barat</h5>
+</div>
+
+<div id="profile" class="w3-container makanan w3-animate-opacity" style="display:none"> 
+ <center><h2 class="w3-panel w3-brown">Profile</h2>
+ <img src="profile.jpg" width="15%">
+ <h5>Nama  : Hani Agustina<br>
+     NIM   : 10121216<br>
+	 Kelas : IF-6</h5>
+</div>
+
+<div id="Karedok" class="w3-container makanan" style="display:none">
+ <center><h2 class="w3-panel w3-brown">Karedok</h2>
+ <img src="karedok.jpg" width="30%" height="40%" class="w3-animate-fading"></center>
+ <h5>Karedok merupakan makanan yang menyehatkan karena bahan utamanya terdiri dari sayur-sayuran.
+     Sepiring karedok terdiri dari kacang panjang,daun kol,tauge,kacang tanah,ketimun, daun kemangi.</h5>
+ </div>
+
+<div id="Tutug Oncom" class="w3-container makanan" style="display:none">
+ <center><h2 class="w3-panel w3-brown">Tutug Oncom</h2>
+ <img src="tutugoncom.jpg" width="30%" height="40%" class="w3-animate-top"></center>
+ <h5>Dalam bahasa Sunda, tutug artinya tumbuk/aduk. 
+     Bahan dasar makanan khas ini adalah nasi dan tentunya oncom.
+	 Oncom digeprek menggunakan bumby khas seperti kencur dan cabe rawit.
+	 Tutug oncom biasa disantap bersama lauk lain seperti tahu,tempe,dan lalapan segar.</h5>
+</div>
+
+<div id="Combro" class="w3-container makanan" style="display:none">
+ <center><h2 class="w3-panel w3-brown">Combro</h2>
+ <img src="combro.jpg" width="30%" height="40%" class="w3-animate-zoom"></center>
+ <h5>Camilan tradisional dari Jawa Barat ini terbuat dari parutan singkong yang diisi dengan oncom.
+     Bentuknya bulat memanjang dengan rasa pedasnya yang nendang.
+	 Combro/comro atau oncom dijero ini memang banyak disukai karena rasanya yang gurih dan pedas.</h5>
+</div>
+
+<div id="Kue Balok" class="w3-container makanan" style="display:none">
+ <center><h2 class="w3-panel w3-brown">Kue Balok</h2>
+ <img src="kuebalok.jpg" width="30%" height="40%" class="w3-animate-opacity"></center>
+ <h5>Kue Balok merupakan salah satu makanan khas Jawa Barat dengan cita rasa manis dan lezat.
+     Sesuai namanya, kue balok memiliki bentuk persegi panjang. Isi dari kue balok padat dan rasanya bervariasi.
+	 Diolah dari adonan tepung terigu yang dicampur dengan bahan lainnya.
+	 Adonan kue balok dimasak dalam cetakan mirip seperti cetakan bandros.
+	 Cocok jadi teman menikmati secangkir kopi atau teh panas.</h5>
+</div>
+
+<div id="Baso Aci" class="w3-container makanan" style="display:none">
+ <center><h2 class="w3-panel w3-brown">Baso Aci</h2>
+ <img src="basoaci.jpg" width="30%" height="40%" class=" w3-animate-left"></center>
+ <h5>Bakso aci atau lebih dikenal dengan baso aci adalah salah satu jajanan paling favorit dan sangat mudah ditemui.
+     Sebenarnya baso aci tidak sepenuhnya bakso karena tidak ada campuran daging seperti halnya bakso.
+	 Cita rasa kuahnya gurih dan asam.Bahan-bahan kuah baso aci terdiri dari air, bumbu, rempah, garam, kaldu, ebi,
+	 daun jeruk, dan perasan jeruk nipis yang diracik sempurna menjadi kuah yang segar mengguyur tenggorokan.</h5>
+</div>
+
+<script>
+function openMakanan(namaMakanan) {
+ var i;
+ var x = document.getElementsByClassName("makanan");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namaMakanan).style.display = "block";
+}
+</script>
+</body>
+</html>
